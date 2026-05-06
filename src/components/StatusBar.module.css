@@ -1,0 +1,33 @@
+.bar {
+  background: #ff8c00;
+  border-top: 3px solid #ffb347;
+  padding: 6px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  box-shadow: 0 -3px 0 #7a4500;
+  position: sticky;
+  bottom: 0;
+  z-index: 50;
+}
+
+.item {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  color: #0d0a05;
+  letter-spacing: 0.5px;
+}
+
+.divider {
+  color: #7a4500;
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.blink {
+  animation: blink 1s step-end infinite;
+  color: #0d0a05;
+}
+@keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }

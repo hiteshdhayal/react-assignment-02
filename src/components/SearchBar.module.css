@@ -1,0 +1,92 @@
+.wrapper {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  background: #1a1006;
+  border: 3px solid #ff8c00;
+  box-shadow: 4px 4px 0 #000, 0 0 12px rgba(255,140,0,0.2);
+  padding: 0 14px;
+  gap: 10px;
+  transition: box-shadow 0.2s;
+}
+.searchBox:focus-within {
+  box-shadow: 4px 4px 0 #000, 0 0 24px rgba(255,140,0,0.5);
+}
+
+.searchIcon { font-size: 20px; }
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+  color: #ffe0a0;
+  padding: 12px 0;
+  letter-spacing: 2px;
+}
+.input::placeholder { color: #7a4500; }
+
+.clear {
+  background: none;
+  border: none;
+  color: #ff8c00;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 6px;
+  font-family: 'VT323', monospace;
+  transition: color 0.15s;
+}
+.clear:hover { color: #ffb347; }
+
+.categoryRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filterLabel {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  color: #ff8c00;
+  white-space: nowrap;
+}
+
+.pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  padding: 6px 12px;
+  background: #1a1006;
+  border: 2px solid #7a4500;
+  color: #a07030;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #000;
+  transition: all 0.1s;
+  letter-spacing: 1px;
+}
+.pill:hover {
+  border-color: #ff8c00;
+  color: #ff8c00;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 #000;
+}
+.pillActive {
+  background: #ff8c00;
+  border-color: #ffb347;
+  color: #0d0a05;
+  box-shadow: 3px 3px 0 #000;
+}
